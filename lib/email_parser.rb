@@ -18,7 +18,8 @@ class EmailParser
     elsif @emails.include?(" ")
       split_array = @emails.split(" ")
     else 
-      @emails.map {|email| 
+      split_array = @emails.split(", ")
+      split_array_2 = split_array.gsub(" ")
     end
     split_array
   end
