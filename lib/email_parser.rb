@@ -17,6 +17,9 @@ class EmailParser
       split_array = @emails.split(", ")
     elsif @emails.include?(" ")
       split_array = @emails.split(" ")
+    else 
+      split_array = @emails.split(", ")
+      split_array_2 = split_array.
     end
     split_array
   end
