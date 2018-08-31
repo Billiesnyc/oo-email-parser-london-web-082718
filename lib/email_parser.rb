@@ -10,6 +10,7 @@ class EmailParser
   end
   
   def parse
+    binding.pry
     if @emails.include?(",")
       split_array = @emails.split(", ")
     elsif @emails.include?(" ")
@@ -17,7 +18,7 @@ class EmailParser
     else 
       split_array = @emails.split(", ")
       split_array_2 = split_array.split(" ")
-      binding.pry
+      
       p "end of method"
       split_array_2
     end
