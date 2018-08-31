@@ -10,7 +10,6 @@ class EmailParser
   end
   
   def parse
-    binding.pry
     if @emails.include?(",")
       split_array = @emails.split(", ")
     elsif @emails.include?(" ")
