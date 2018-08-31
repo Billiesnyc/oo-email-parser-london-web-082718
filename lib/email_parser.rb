@@ -17,6 +17,7 @@ class EmailParser
     elsif emails.include?(" ")
       split_array = emails.split(" ")
     end
+    split_array
   end
   
 end
