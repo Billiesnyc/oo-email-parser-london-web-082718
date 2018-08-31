@@ -19,7 +19,7 @@ class EmailParser
       split_array = @emails.split(" ")
     else 
       split_array = @emails.split(", ")
-      split_array_2 = split_array.gsub(" ")
+      split_array_2 = split_array.split(" ")
     end
   end
   
