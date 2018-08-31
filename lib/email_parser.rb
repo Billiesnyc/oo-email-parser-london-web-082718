@@ -16,11 +16,6 @@ class EmailParser
       split_array = @emails.split(" ")
     else 
       split_array = @emails.split(/, | /)
-      split_array.map do |email|
-        if email.include?(" ")
-          email.join().split(" ")
-        end
-      end
     end
     split_array.uniq
   end
