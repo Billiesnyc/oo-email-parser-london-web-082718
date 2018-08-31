@@ -12,7 +12,11 @@ class EmailParser
   end
   
   def parse(emails)
-  split_array = emails.split(" ").join()
+    if emails.include?(",")
+      split_array = emails.split(",")
+    elsif emails.include?(" ")
+      split_array = emails.split(" ")
+    end
   end
   
 end
