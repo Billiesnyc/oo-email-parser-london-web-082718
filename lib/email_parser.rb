@@ -18,7 +18,7 @@ class EmailParser
       split_array = @emails.split(", ")
       split_array.map do |email|
         if email.include?(" ")
-          email.join(" ")
+          email.join().split(" ")
         end
       end
     end
