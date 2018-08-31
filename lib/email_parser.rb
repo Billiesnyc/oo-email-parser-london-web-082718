@@ -17,6 +17,7 @@ class EmailParser
       split_array = @emails.split(" ")
     else 
       split_array = @emails.split(", ")
+      joined_string = split_array.join(" ")
       split_array_2 = split_array.split(" ")
       
       p "end of method"
