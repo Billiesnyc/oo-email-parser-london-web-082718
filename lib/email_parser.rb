@@ -24,6 +24,7 @@ class EmailParser
         end
       end
     end
+    split_array.uniq
   end
   
 end
