@@ -20,7 +20,6 @@ class EmailParser
       joined_string = split_array.join(" ")
       split_array_2 = joined_string.split(" ")
     end
-    
   end
   
 end
