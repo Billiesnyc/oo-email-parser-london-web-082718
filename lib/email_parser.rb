@@ -21,7 +21,6 @@ class EmailParser
       split_array = @emails.split(", ")
       split_array_2 = split_array.gsub(" ")
     end
-    split_array
   end
   
 end
