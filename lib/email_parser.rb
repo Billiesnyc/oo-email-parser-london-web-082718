@@ -19,8 +19,6 @@ class EmailParser
       split_array.map do |email|
         if email.include?(" ")
           email.split(" ")
-        else @emails.include?(email)
-          @emails.delete(email)
         end
       end
     end
