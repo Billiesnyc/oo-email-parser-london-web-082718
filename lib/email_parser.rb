@@ -20,7 +20,7 @@ class EmailParser
         if email.include?(" ")
           email.split(" ")
         else @emails.include?(email)
-          email.gsub
+          email.delete
         end
       end
     end
