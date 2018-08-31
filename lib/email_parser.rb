@@ -21,7 +21,7 @@ class EmailParser
       split_array_2
     end
     binding.pry
-    p "another thing"
+
   end
   
 end
